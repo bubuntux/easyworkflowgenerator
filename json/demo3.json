@@ -1,0 +1,56 @@
+    {
+        "a": {
+            "title": "AAAA",
+            "tooltip": "a tooltip",
+            "callback": "a_callback",
+            "available": [
+                "b",
+				"c"
+            ]
+        },
+        "b": {
+            "title": "BBBB",
+            "tooltip": "b tooltip",
+            "current": true,
+            "available": [
+                "d"
+            ]
+        },
+        "d": {
+            "title": "DDDD",
+            "tooltip": "d tooltip",
+            "callback": "d_callback",
+            "available": [
+                "x"
+            ]
+        },
+        "x": {
+            "title": "XXXX",
+            "tooltip": "f tooltip",
+            "callback": "f_callback"
+        },
+        "c": {
+            "title": "CCCC",
+            "tooltip": "c tooltip",
+            "callback": "c_callback",
+            "available": [
+                "f", "g"
+            ]
+        },
+        "f": {
+            "title": "FFFF",
+            "tooltip": "e tooltip",
+            "callback": "e_callback",
+            "available": [
+                "x"
+            ]
+        },
+        "g": {
+            "title": "GGGGG",
+            "tooltip": "f tooltip",
+            "callback": "f_callback",
+            "available": [
+                "x"
+            ]
+        }
+    }

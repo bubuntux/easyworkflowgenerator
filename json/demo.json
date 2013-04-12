@@ -1,0 +1,50 @@
+    {
+        "a": {
+            "title": "esto es una demo",
+            "tooltip": "a tooltip",
+            "callback": "a_callback",
+            "available": [
+                "b",
+		"e"
+            ]
+        },
+        "b": {
+            "title": "una demo dije",
+            "tooltip": "b tooltip",
+            "current": true,
+            "available": [
+                "c",
+		"f"
+            ]
+        },
+        "c": {
+            "title": "procesos no se que",
+            "tooltip": "c tooltip",
+            "callback": "c_callback",
+            "available": [
+                "d"
+            ]
+        },
+        "d": {
+            "title": "bla bla bla",
+            "tooltip": "d tooltip",
+            "callback": "d_callback",
+            "available": [
+                "e"
+            ]
+        },
+        "e": {
+            "title": "pana se la come",
+            "tooltip": "e tooltip",
+            "callback": "e_callback"
+        },
+        "f": {
+            "title": "toda toda",
+            "tooltip": "f tooltip",
+            "callback": "f_callback",
+            "available": [
+                "d", 
+		"e"
+            ]
+        }
+    }

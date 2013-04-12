@@ -1,0 +1,58 @@
+.pachueco {
+	border: 1px solid #f00;
+	color: #fff;
+}
+
+	.pachueco .arrow {
+		border-color: #a99;
+	}
+
+	.pachueco .raphael {
+		background: #fd9!important;
+	}
+
+	.pachueco .node {
+		background: #c30;
+		border-radius: 13px;
+		border: 3px dotted #a00;
+		box-shadow: 0 2px 10px #f60;
+		font-size: 12px;
+		text-align: center; 
+		width: 80%;
+	}
+
+		.pachueco .current {
+			background: #643!important;
+			border-color: #963;
+			color: #ddd;
+		}
+
+			.pachueco .current:hover {
+				background: #432!important;
+			}
+
+		.pachueco .disabled {
+			background: #ca9!important;
+			border-color: #a96;
+			color: #966!important;
+		}
+
+		.pachueco .available {
+			background: #363!important;
+			color: #fff!important;
+		}
+
+			.pachueco .available:hover {
+				background: #030!important;
+				border-color: #363;
+			}
+
+		.pachueco .node span {
+			color: yellow	;
+			font-size: 9px;
+		}
+
+	#dropdown {
+		background: #c30!important;
+		color: #fff;
+	}

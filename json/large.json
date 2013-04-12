@@ -1,0 +1,75 @@
+    {
+        "a": {
+            "title": "a",
+            "tooltip": "a tooltip",
+            "callback": "a_callback",
+            "available": [
+                "b",
+                "h"
+            ]
+        },
+        "b": {
+            "title": "b",
+            "tooltip": "b tooltip",
+            "callback": "b_callback",
+            "available": [
+                "c"
+            ]
+        },
+        "c": {
+            "title": "c",
+            "tooltip": "c tooltip",
+            "callback": "c_callback",
+            "available": [
+                "d",
+                "g"
+            ]
+        },
+        "d": {
+            "title": "d",
+            "tooltip": "d tooltip",
+            "callback": "d_callback",
+            "available": [
+                "e",
+                "i"
+            ]
+        },
+        "e": {
+            "title": "e",
+            "tooltip": "e tooltip",
+            "callback": "e_callback",
+            "current": true,
+            "available": [
+                "f"
+            ]
+        },
+        "f": {
+            "title": "f",
+            "tooltip": "f tooltip",
+            "callback": "f_callback",
+            "available": [
+                "g"
+            ]
+        },
+        "g": {
+            "title": "g",
+            "tooltip": "g tooltip",
+            "callback": "g_callback"
+        },
+        "h": {
+            "title": "h",
+            "tooltip": "h tooltip",
+            "callback": "h_callback",
+            "available": [
+                "c"
+            ]
+        },
+        "i": {
+            "title": "i",
+            "tooltip": "i tooltip",
+            "callback": "i_callback",
+            "available": [
+                "f"
+            ]
+        }
+    }

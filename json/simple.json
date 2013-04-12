@@ -1,0 +1,24 @@
+{
+    "a": {
+        "title": "a",
+        "tooltip": "a tooltip",
+        "callback": "a_callback",
+        "available": [
+            "b"
+        ]
+    },
+    "b": {
+        "title": "b",
+        "tooltip": "b tooltip",
+        "callback": "b_callback",
+        "current": true,
+        "available": [
+            "c"
+        ]
+    },
+    "c": {
+        "title": "c",
+        "tooltip": "c tooltip",
+        "callback": "c_callback"
+    }
+}
