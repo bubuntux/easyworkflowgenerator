@@ -17,34 +17,49 @@
 			<header>
 				<h1>Pachueco jQuery Plugin <span>v0.1gamma</span></h1>
 			</header>
-			<article id="examples">
-				<div id="toolbar">
-					Theme: 
-					<select id="themes">
-						<option value="default">Default</option>
-						<option value="cobalt">Cobalt</option>
-						<option value="tangerine">Tangerine</option>
-					</select>
-				</div>
+			<div id="toolbar">
+				Theme: 
+				<select id="themes">
+					<option value="default">Default</option>
+					<option value="cobalt">Cobalt</option>
+					<option value="tangerine">Tangerine</option>
+				</select>
+			</div>
+			<article id="demo" class="tab">
+				<div id="codeContainer"><div id="codeJSON"></div></div>
 				<div>
 					<h2>Demo</h2>
 					<p>
 						A normal workflow
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/demo.json');"> 
 [a]-->[b]-->[c]--[>d]-->[e]
          '->[f]------'
 					</div>
+					<p>
+					Integration code:
+					</p>
+				<div class="code"> 
+$('.element').pachueco({json: 'demo.json'});
+				</div>
 					<div id="demoExample" class="pachueco"></div>
 				</div>
-
+			</article>
+			<article id="usage" class="tab">
+				<h2>How to use this plugin</h2>
+				<p>
+					All examples use the following code:
+				</p>
+				<div class="code"> 
+$('.element').pachueco({json: 'file.json'});
+				</div>
 
 				<div>
 					<h2>Simplest Example</h2>
 					<p>
 						3 nodes' workflow.
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/simple.json');"> 
 [a]-->[b]-->[c]
 					</div>
 					<div id="simpleExample" class="pachueco"></div>
@@ -55,7 +70,7 @@
 					<p>
 						5 nodes' workflow with one bifurcation.
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/bifurcation.json');"> 
 [a]-->[b]-->[c]-->[d]
          '->[e]-'
 					</div>
@@ -67,7 +82,7 @@
 					<p>
 						7 nodes' workflow with two bifurcations.
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/advanced.json');"> 
 [a]-->[b]-->[c]-->[d]-->[e]
    '->[f]-'    '->[g]-'
 					</div>
@@ -79,7 +94,7 @@
 					<p>
 						9 nodes' workflow with three bifurcations and one overlap.
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/large.json');"> 
 [a]-->[b]-->[c]-->[d]-->[e]-->[f]-->[g]
    '->[h]-'    |     '->[i]-'    |
                '-----------------'
@@ -92,7 +107,7 @@
 					<p>
 						13 nodes' workflow with four bifurcations and two overlaps.
 					</p>
-					<div class="code"> 
+					<div class="code" onclick="loadCode('json/complex.json');"> 
 [a]-->[b]-->[c]-->[d]-->[e]-->[f]-->[g]-->[h]-->[i]-->[j]
    '->[k]-'    |     |     '->[l]-->[m]'     |     |
                |     '-----------------------'     |
@@ -100,34 +115,25 @@
 					</div>
 					<div id="complexExample" class="pachueco"></div>
 				</div>
-
 			</article>
-
-			<article id="examples">
-				<h2>Usage</h2>
-				<div class="code"> 
-$('.element').pachueco({json: 'data.json', steps:5});
-				</div>
-			</article>
-
-			<article id="examples">
+			<article id="team" class="tab">
 				<h2>Dev Team</h2>
 				<ul>
 					<li>
-						<strong>Nombre</strong><br />
-						Descripción
+						<strong>Jonathan Lara</strong><br />
+						Backend Web Developer<br />
 					</li>
 					<li>
-						<strong>Nombre</strong><br />
-						Descripción
+						<strong>Mario Pacheco</strong><br />
+						Front End Web Developer<br />
 					</li>
 					<li>
-						<strong>Nombre</strong><br />
-						Descripción
+						<strong>Julio Guti&eacute;rrez</strong><br />
+						Backend Web Developer<br />
 					</li>
 					<li>
-						<strong>Nombre</strong><br />
-						Descripción
+						<strong>Alonso M&eacute;ndez</strong><br />
+						Front End Web Developer<br />
 					</li>
 				</ul>
 			</article>
@@ -142,6 +148,13 @@ $('.element').pachueco({json: 'data.json', steps:5});
 			</footer>
 		</section>
 		<script>
+
+		function loadCode(file){
+			$('#codeContainer').fadeIn();
+			$('#codeJSON').load(file);
+			console.log(file);
+		}
+
 		(function($) {
 			$('#demoExample').pachueco({json: 'json/demo.json'});
 
@@ -153,12 +166,12 @@ $('.element').pachueco({json: 'data.json', steps:5});
 				$(this).slideUp();
 			});
 
-
 			$('#simpleExample').pachueco({json: 'json/simple.json'});
 			$('#bifurcationExample').pachueco({json: 'json/bifurcation.json'});
 			$('#advancedExample').pachueco({json: 'json/advanced.json'});
 			$('#largeExample').pachueco({json: 'json/large.json'});
 			$('#complexExample').pachueco({json: 'json/complex.json'});
+			$('#codeContainer').bind('click', function(){$(this).fadeOut()});
 		}(jQuery));
 		</script>
 	</body>
